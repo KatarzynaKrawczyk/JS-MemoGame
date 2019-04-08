@@ -1,3 +1,11 @@
+.square{
+    background-color: blue;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+}
+
+
 //display
 .card{
     width: 5rem;
