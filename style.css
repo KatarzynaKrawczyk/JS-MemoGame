@@ -1,0 +1,35 @@
+//display
+.card{
+    width: 5rem;
+}
+.card-deck {
+    display: flex;
+    flex-direction: row;
+}
+//Card backside
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+}
+.aqua{
+    background-color: aqua;
+}
+.gold{
+    background-color:gold;
+}
+.gray{
+    background-color: gray;
+}
+.black{
+    background-color: black;
+}
+
+//Card state
+.hidden{
+    background-color: antiquewhite;
+}
+.off {
+    background-color: #eee;
+}
