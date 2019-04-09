@@ -6,15 +6,18 @@
 }
 
 
-//display
+/*display*/
+
 .card{
     width: 5rem;
+    height: 5rem;
 }
 .card-deck {
     display: flex;
     flex-direction: row;
 }
-//Card backside
+/*Card backside*/
+
 .red{
     background-color: red;
 }
@@ -34,9 +37,13 @@
     background-color: black;
 }
 
-//Card state
+/*Card state*/
+
 .hidden{
-    background-color: antiquewhite;
+    background-color: black;
+   /* background-image: url("falling-star.png");
+    background-size: cover;
+    */
 }
 .off {
     background-color: #eee;
