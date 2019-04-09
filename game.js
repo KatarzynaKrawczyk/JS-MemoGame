@@ -1,9 +1,10 @@
 
 const CardsColor = [
-    "star", "blue", "aqua", "gold", "gray", "black", 
-    "star", "blue", "aqua", "gold", "gray", "black"
+    "star", "blue",
+     "aqua", "gold", "gray", "black", 
+    "star", "blue",
+     "aqua", "gold", "gray", "black"
 ];
-
 
 let cards = document.getElementsByClassName('card-body');
 cards = [...cards];
@@ -41,8 +42,8 @@ if (activeCard == activeCards[0]) {return;};
             activeCards[1] = activeCard;
             setTimeout(function(){
                 if (activeCards[0].className == activeCards[1].className){
-                    console.log('paired')
-                    activeCards.forEach(card => card.classList.add('off'))
+                    console.log('paired');
+                    activeCards.forEach(card => card.classList.add('off'));
                     gameResult++;
 //mute paired cards
                     cards = cards.filter(card => !card.classList.contains('off'));
@@ -55,7 +56,6 @@ if (activeCard == activeCards[0]) {return;};
                         alert(`You Won! your time score is ${gameTime} seconds`)
                         location.reload();
                     }
-                    
                 }
                 else {
                     console.log('try again');
@@ -75,7 +75,6 @@ const init = function() {
         card.classList.add(CardsColor[position]);
         CardsColor.splice(position, 1);
     })
-
     setTimeout(function () {
         cards.forEach(card => {
             card.classList.add('hidden')
@@ -85,5 +84,6 @@ const init = function() {
 };
 
 init();
+
 
 
