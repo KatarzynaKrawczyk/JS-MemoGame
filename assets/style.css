@@ -9,50 +9,37 @@
 /*display*/
 
 .card{
-    margin: 1rem;
-    padding: .5rem;
     width: 5rem;
     height: 5rem;
-    background-color: black;
 }
 .card-deck {
     display: flex;
     flex-direction: row;
 }
 /*Card backside*/
-.card-body{
-    background-size: cover;
-}
-.star{
-    background-image: url("assets/img/angel.png");
-    /*background-color: red;*/
+
+.red{
+    background-color: red;
 }
 .blue{
-    background-image: url("assets/img/donald.png");
     background-color: blue;
 }
 .aqua{
-    background-image: url("assets/img/katie.png");
     background-color: aqua;
 }
 .gold{
-    background-image: url("assets/img/obama.png");
     background-color:gold;
 }
 .gray{
-    background-image: url("assets/img/putin.png");
     background-color: gray;
 }
 .black{
-    background-image: url("assets/img/xi.png");
     background-color: rgb(3, 78, 0);
 }
 
 /*Card state*/
 
 .hidden{
-    z-index: 2;
-    background-image: url('assets/img/falling-star.png');
     background-color: black;
    /* background-image: url("falling-star.png");
     background-size: cover;
